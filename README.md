@@ -1,6 +1,6 @@
-# Agniraj — Option 2
+# Agniraj — Option 3
 
-Responsive React website based on the approved Option 2 concept. Built with React 19, TypeScript and Vinext; exported as a static site.
+Responsive React website based on the approved Option 3 concept. Built with React 19, TypeScript and Vinext; exported as a static site.
 
 ## Run locally
 
