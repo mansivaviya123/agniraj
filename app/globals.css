@@ -171,3 +171,14 @@ body{overflow-x:hidden}
  [data-reveal],.hero-copy>*,.hero-photo,.photo-caption{opacity:1!important;transform:none!important;animation:none!important;clip-path:none!important}
  .hero-photo>img{transform:none!important;transition:none!important}
 }
+
+/* Actionable industry cards */
+.industry-card{position:relative;isolation:isolate;overflow:hidden;width:100%;padding:0;border:1px solid #425362;background:transparent;color:inherit;text-align:left;transition:border-color .35s ease,transform .35s ease;transition-delay:var(--delay)}
+.industry-card:hover,.industry-card:focus-visible{transform:translateY(-7px);border-color:var(--red)}
+.industry-card:hover img,.industry-card:focus-visible img{transform:scale(1.07);filter:saturate(1.08)}
+.industry-card:hover h3 svg,.industry-card:focus-visible h3 svg{transform:translateX(5px)}
+@media(prefers-reduced-motion:no-preference){
+ .industry-layout[data-reveal] .industry-card{opacity:0;transform:translateY(22px)}
+ .industry-layout[data-reveal].is-visible .industry-card{opacity:1;transform:none}
+ .industry-layout[data-reveal].is-visible .industry-card:hover,.industry-layout[data-reveal].is-visible .industry-card:focus-visible{transform:translateY(-7px)}
+}
